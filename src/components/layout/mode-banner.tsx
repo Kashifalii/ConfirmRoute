@@ -16,16 +16,16 @@ export function ModeBanner({
     return (
       <div
         className={cn(
-          "mb-6 flex items-start gap-3 rounded-lg border border-info/30 bg-info/5 px-4 py-3 text-sm text-info",
+          "mb-6 flex items-start gap-3 rounded-lg border border-info/30 bg-info/5 px-4 py-3 text-sm text-info hidden",
           className,
         )}
       >
         <Info aria-hidden="true" className="mt-0.5 size-4 shrink-0" />
         <p>
-          <span className="font-medium">Signed-in workspace.</span>{" "}
-          Records are stored in PostgreSQL and protected by organization-scoped
-          database policies. Text-based PDFs are parsed locally; sample
-          scenarios use predefined data.
+          <span className="font-medium">Signed-in workspace.</span> Records are
+          stored in PostgreSQL and protected by organization-scoped database
+          policies. Text-based PDFs are parsed locally; sample scenarios use
+          predefined data.
         </p>
       </div>
     );
